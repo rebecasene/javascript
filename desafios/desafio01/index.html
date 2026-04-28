@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+</head>
+<body>
+    <h1>Sistema de imigração</h1>
+    Em qual país você nasceu? <input type="text" name="p" id="p">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="pr">
+
+    </div>
+
+    <script>
+        function verificar() {
+            let pais = document.getElementById('p').value
+            let print = document.getElementById('pr')
+            print.innerHTML = `<p>Você nasceu no país: ${pais.toUpperCase()}.</p>`
+            if (pais.trim().toLowerCase() != 'brasil') {
+                print.innerHTML += `<p>Sendo assim, você é ESTRANGEIRO.</p>`
+            } else {
+                print.innerHTML += `<p>Sendo assim, você é BRASILEIRO.</p>`
+            }
+        }
+    </script>
+
+</body>
+</html>
