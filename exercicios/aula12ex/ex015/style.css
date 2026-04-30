@@ -40,9 +40,7 @@ footer {
     }
 
     img#foto {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
+        max-width: 200px;
+        
     }
 }
