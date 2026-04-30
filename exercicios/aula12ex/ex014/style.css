@@ -27,3 +27,14 @@ footer {
     font-style: italic;
     padding-top: 5px;
 }
+
+@media screen and (max-width: 600px){
+    section {
+        width: 90vw;
+    }
+
+    img#foto {
+        max-width: 200px;
+        
+    }
+}
