@@ -40,7 +40,7 @@ footer {
     }
 
     img#foto {
-        width: 150px;
+        max-width: 100%;
     }
    
 }
