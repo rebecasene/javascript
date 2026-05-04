@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>
-            Título
+            Tabuada
         </h1>
     </header>
     <section>
         <div>
-            Testando
+            <p>
+                <strong>Número:</strong> <input type="number" name="n" id="n">
+                <input type="button" value="Gerar Tabuada" onclick="gerar()">
+            </p>
+            
         </div>
         <div id="r">
-         Olá
+         <select name="t" id="t" size="10">
+            <option value="">Digite um número acima</option>
+         </select>
+
         </div>
 
     </section>
