@@ -20,6 +20,10 @@ section {
     padding: 10px;
 }
 
+#s {
+    width: 150px;
+}
+
 footer {
     text-align: center;
     padding: 10px;
