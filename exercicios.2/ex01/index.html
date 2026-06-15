@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightpink;
+            text-align: center; 
+        }
+        section {
+            background-color: rgb(255, 224, 242);
+            width: 50vw;
+            margin: auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #p {
+            padding: 10px;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Verificador de idades</h1>
+    </header>
+
+    <section>
+        <div id="v">
+            <p><strong>Qual a primeira idade?</strong> <input type="number" name="i" id="i"></p>
+            <br>
+            <p><strong>Qual a segunda idade?</strong> <input type="number" name="i2" id="i2"></p>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+    </section>
+
+    <div id="p">
+        Verificando...
+    </div>
+
+    <script>
+        function verificar() { 
+        let primeira = document.getElementById('i').value
+        let segunda = document.getElementById('i2').value
+        let resultado = document.getElementById('p')
+
+        if (primeira > segunda) {
+            resultado.innerHTML = `A primeira idade (${primeira} anos) é maior do que a segunda idade (${segunda} anos).`
+        }
+        else if (primeira == segunda) {
+            resultado.innerHTML = 'As idades são iguais.'
+        }
+        else {
+            resultado.innerHTML = `A segunda idade (${segunda} anos) é maior do que a primeira idade (${primeira} anos).`
+        }
+    }
+    </script>
+</body>
+</html>
