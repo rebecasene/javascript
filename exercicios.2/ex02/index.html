@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de notas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Verificador de notas</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                <label for="n1"><strong>Qual foi sua nota nesse semestre?</strong></label>
+                <input type="number" name="n1" id="n1" min="0" max="10">
+            </p>
+        
+        <p>
+            <input type="button" value="verificar" onclick="verificar()">
+        </p>
+        </div>
+
+        <div id="res">
+            Verificando...
+        </div>
+    </section>
+</body>
+</html>
