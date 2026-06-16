@@ -20,7 +20,7 @@
         }
 
         #p {
-            padding: 10px;
+            margin-top: 20px;
         }
     
     </style>
@@ -33,31 +33,32 @@
 
     <section>
         <div id="v">
-            <p><strong>Qual a primeira idade?</strong> <input type="number" name="i" id="i"></p>
+            <p><strong id="idade1">Qual a primeira idade?</strong> <input type="number" name="i" id="i"></p>
             <br>
-            <p><strong>Qual a segunda idade?</strong> <input type="number" name="i2" id="i2"></p>
+            <p><strong id="idade2">Qual a segunda idade?</strong> <input type="number" name="i2" id="i2"></p>
             <input type="button" value="Verificar" onclick="verificar()">
         </div>
-    </section>
+    
 
     <div id="p">
         Verificando...
     </div>
+    </section>
 
     <script>
         function verificar() { 
-        let primeira = document.getElementById('i').value
-        let segunda = document.getElementById('i2').value
+        let primeira = Number(document.getElementById('i').value)
+        let segunda = Number(document.getElementById('i2').value)
         let resultado = document.getElementById('p')
 
         if (primeira > segunda) {
-            resultado.innerHTML = `A primeira idade (${primeira} anos) é maior do que a segunda idade (${segunda} anos).`
-        }
-        else if (primeira == segunda) {
+            resultado.innerHTML =
+                `A primeira idade (${primeira} anos) é maior do que a segunda idade (${segunda} anos).`
+        } else if (segunda > primeira) {
+            resultado.innerHTML =
+                `A segunda idade (${segunda} anos) é maior do que a primeira idade (${primeira} anos).`
+        } else {
             resultado.innerHTML = 'As idades são iguais.'
-        }
-        else {
-            resultado.innerHTML = `A segunda idade (${segunda} anos) é maior do que a primeira idade (${primeira} anos).`
         }
     }
     </script>
