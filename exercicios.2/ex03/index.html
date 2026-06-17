@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Escolha seus operadores</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                <label for="num1">Digite o primeiro número:</label>
+                <input type="number" name="num1" id="num1">
+            </p>
+            <p>
+                <label for="num2">Digite o segundo número:</label>
+                <input type="number" name="num2" id="num2">
+            </p>
+
+            <div id="escolha">
+                <strong>O que deseja fazer com os números digitados? </strong>
+                <p>1. SOMAR </p>
+                <p>2. SUBTRAIR </p>
+                <p>3. MULTIPLICAR </p>
+                <p>4. DIVIDIR </p>
+                <p>5. SAIR</p>
+                <label for="op"></label>
+                <input type="number" name="op" id="op">
+                <input type="button" value="calcular" onclick="calcular()">
+            </div>
+        </div>
+
+        <div id="res">
+            
+        </div>
+    </section>
+</body>
+</html>
