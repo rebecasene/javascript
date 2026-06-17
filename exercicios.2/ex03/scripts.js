@@ -4,9 +4,12 @@ function calcular() {
     let opc = document.getElementById('op')
     let resultado = document.getElementById('res')
 
-    if (opcional == 5){
-        resultado.innerHTML = 'Obrigada! Volte sempre.'
-        return
+    let opcional = Number(opc.value)
+
+    
+    if (opcional == 5) {
+        document.body.innerHTML = '<h1>Obrigada! Volte sempre.</h1>';
+        return;
     }
 
     if (n1.value === '' || n2.value === '' ) {
@@ -16,7 +19,9 @@ function calcular() {
 
     let numero1 = Number(n1.value)
     let numero2 = Number(n2.value)
-    let opcional = Number(opc.value)
+    
+
+
 
     if (opc.value === '' || opcional < 1 || opcional > 5) {
         resultado.innerHTML = '<span style="color: red;">Digite uma opção válida</span>'
